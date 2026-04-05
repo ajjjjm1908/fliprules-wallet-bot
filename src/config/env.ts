@@ -9,11 +9,7 @@ const envSchema = z.object({
   MAX_DAILY_LOSS_USD: z.string().default("25"),
   TAKE_PROFIT_PCT: z.string().default("12"),
   STOP_LOSS_PCT: z.string().default("6"),
-  PRIVATE_KEY: z.string().default("0xYOUR_PRIVATE_KEY_HERE"),
-  DRY_RUN: z.string().default("true"),
   ORDER_SIZE_USD: z.string().default("25"),
-  TAKE_PROFIT_PCT: z.string().default("12"),
-  STOP_LOSS_PCT: z.string().default("6"),
 });
 
 export const env = envSchema.parse(process.env);
